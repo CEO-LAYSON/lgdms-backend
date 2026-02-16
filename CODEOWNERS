@@ -1,1 +1,7 @@
-# Code Owners
+# Default owners
+* @project-lead @tech-lead
+
+# Specific modules
+/src/main/java/com/crn/lgdms/modules/users/ @backend-team
+/src/main/resources/db/ @dba-team
+/docs/ @documentation-team

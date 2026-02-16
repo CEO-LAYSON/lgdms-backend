@@ -1,1 +1,7 @@
-# Docker Ignore
+target/
+*.log
+*.md
+.git
+.gitignore
+.env
+.mvn/wrapper/maven-wrapper.jar

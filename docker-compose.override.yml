@@ -1,1 +1,10 @@
-# Docker Compose Override Configuration (dev)
+version: '3.8'
+
+services:
+  app:
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+    volumes:
+      - ./target:/app/target
+      - ./src:/app/src
+    command: ["./wait-for-it.sh", "postgres:5432", "--", "java", "-jar", "/app/target/lgdms-1.0.0.jar"]

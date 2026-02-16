@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/lgdms_dev
+    username: lgdms_dev
+    password: dev123
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+
+logging:
+  level:
+    com.crn.lgdms: DEBUG
+    org.springframework.web: DEBUG

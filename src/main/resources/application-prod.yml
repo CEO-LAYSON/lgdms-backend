@@ -1,0 +1,11 @@
+spring:
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: validate
+
+logging:
+  level:
+    com.crn.lgdms: WARN
+  file:
+    name: /var/log/lgdms/lgdms.log
