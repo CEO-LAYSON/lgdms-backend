@@ -1,4 +1,4 @@
-﻿package com.crn.lgdms.observability.metrics;
+package com.crn.lgdms.observability.metrics;
 
 import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.core.instrument.Timer;

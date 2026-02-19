@@ -1,4 +1,4 @@
-﻿package com.crn.lgdms.modules.payments.dto.mapper;
+package com.crn.lgdms.modules.payments.dto.mapper;
 
 import com.crn.lgdms.common.mapping.MapperConfig;
 import com.crn.lgdms.modules.payments.domain.entity.Payment;

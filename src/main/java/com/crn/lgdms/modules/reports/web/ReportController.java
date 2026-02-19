@@ -1,4 +1,4 @@
-﻿package com.crn.lgdms.modules.reports.web;
+package com.crn.lgdms.modules.reports.web;
 
 import com.crn.lgdms.common.api.ApiResponse;
 import com.crn.lgdms.common.constants.Permissions;

@@ -1,4 +1,4 @@
-﻿package com.crn.lgdms.modules.masterdata.web;
+package com.crn.lgdms.modules.masterdata.web;
 
 import com.crn.lgdms.common.api.ApiResponse;
 import com.crn.lgdms.common.constants.Permissions;

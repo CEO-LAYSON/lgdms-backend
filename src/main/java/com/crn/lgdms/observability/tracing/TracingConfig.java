@@ -1,4 +1,4 @@
-﻿package com.crn.lgdms.observability.tracing;
+package com.crn.lgdms.observability.tracing;
 
 import io.opentelemetry.api.OpenTelemetry;
 import io.opentelemetry.api.trace.Tracer;

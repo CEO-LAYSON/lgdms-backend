@@ -1,4 +1,4 @@
-﻿package com.crn.lgdms.modules.receiving.domain.entity;
+package com.crn.lgdms.modules.receiving.domain.entity;
 
 import com.crn.lgdms.common.enums.TransactionStatus;
 import com.crn.lgdms.modules.locations.domain.entity.Location;

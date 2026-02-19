@@ -1,4 +1,4 @@
-﻿package com.crn.lgdms.modules.receiving.dto.mapper;
+package com.crn.lgdms.modules.receiving.dto.mapper;
 
 import com.crn.lgdms.common.mapping.MapperConfig;
 import com.crn.lgdms.modules.receiving.domain.entity.GoodsReceiving;

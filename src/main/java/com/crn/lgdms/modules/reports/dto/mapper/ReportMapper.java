@@ -1,4 +1,4 @@
-﻿package com.crn.lgdms.modules.reports.dto.mapper;
+package com.crn.lgdms.modules.reports.dto.mapper;
 
 import com.crn.lgdms.modules.reports.dto.response.ReportRowResponse;
 import com.crn.lgdms.modules.reports.dto.response.ReportSummaryResponse;

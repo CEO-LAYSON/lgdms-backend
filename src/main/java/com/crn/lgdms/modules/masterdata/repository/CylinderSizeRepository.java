@@ -1,4 +1,4 @@
-﻿package com.crn.lgdms.modules.masterdata.repository;
+package com.crn.lgdms.modules.masterdata.repository;
 
 import com.crn.lgdms.modules.masterdata.domain.entity.CylinderSize;
 import org.springframework.data.domain.Sort;

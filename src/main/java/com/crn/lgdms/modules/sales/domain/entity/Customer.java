@@ -1,4 +1,4 @@
-﻿package com.crn.lgdms.modules.sales.domain.entity;
+package com.crn.lgdms.modules.sales.domain.entity;
 
 import com.crn.lgdms.modules.users.domain.entity.BaseEntity;
 import jakarta.persistence.*;

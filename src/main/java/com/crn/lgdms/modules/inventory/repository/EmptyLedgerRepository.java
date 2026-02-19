@@ -1,4 +1,4 @@
-﻿package com.crn.lgdms.modules.inventory.repository;
+package com.crn.lgdms.modules.inventory.repository;
 
 import com.crn.lgdms.modules.inventory.domain.entity.EmptyLedger;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,4 +1,4 @@
-﻿package com.crn.lgdms.modules.jobs.scheduler;
+package com.crn.lgdms.modules.jobs.scheduler;
 
 import com.crn.lgdms.modules.credit.repository.CreditAccountRepository;
 import com.crn.lgdms.modules.inventory.service.ReconciliationService;

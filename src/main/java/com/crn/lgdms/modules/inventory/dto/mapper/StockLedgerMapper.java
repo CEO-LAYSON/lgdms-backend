@@ -1,4 +1,4 @@
-﻿package com.crn.lgdms.modules.inventory.dto.mapper;
+package com.crn.lgdms.modules.inventory.dto.mapper;
 
 import com.crn.lgdms.common.mapping.MapperConfig;
 import com.crn.lgdms.modules.inventory.domain.entity.StockLedger;

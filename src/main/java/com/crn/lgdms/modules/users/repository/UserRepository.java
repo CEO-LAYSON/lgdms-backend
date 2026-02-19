@@ -1,4 +1,4 @@
-﻿package com.crn.lgdms.modules.users.repository;
+package com.crn.lgdms.modules.users.repository;
 
 import com.crn.lgdms.modules.users.domain.entity.User;
 import org.springframework.data.domain.Page;

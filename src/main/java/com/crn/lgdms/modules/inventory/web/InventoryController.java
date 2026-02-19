@@ -1,4 +1,4 @@
-﻿package com.crn.lgdms.modules.inventory.web;
+package com.crn.lgdms.modules.inventory.web;
 
 import com.crn.lgdms.common.api.ApiResponse;
 import com.crn.lgdms.common.api.PageResponse;

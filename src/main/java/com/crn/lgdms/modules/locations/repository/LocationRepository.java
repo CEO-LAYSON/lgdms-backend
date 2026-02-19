@@ -1,4 +1,4 @@
-﻿package com.crn.lgdms.modules.locations.repository;
+package com.crn.lgdms.modules.locations.repository;
 
 import com.crn.lgdms.common.enums.LocationType;
 import com.crn.lgdms.modules.locations.domain.entity.Location;

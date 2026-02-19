@@ -1,4 +1,4 @@
-﻿package com.crn.lgdms.observability.logging;
+package com.crn.lgdms.observability.logging;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

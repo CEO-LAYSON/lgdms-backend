@@ -1,4 +1,4 @@
-﻿package com.crn.lgdms.modules.credit.repository;
+package com.crn.lgdms.modules.credit.repository;
 
 import com.crn.lgdms.modules.credit.domain.entity.CreditAccount;
 import org.springframework.data.domain.Page;

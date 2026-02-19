@@ -1,4 +1,4 @@
-﻿package com.crn.lgdms.modules.inventory.domain.entity;
+package com.crn.lgdms.modules.inventory.domain.entity;
 
 import com.crn.lgdms.common.enums.MovementType;
 import com.crn.lgdms.common.enums.ProductType;

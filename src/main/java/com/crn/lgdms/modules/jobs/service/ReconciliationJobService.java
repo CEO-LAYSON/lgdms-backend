@@ -1,4 +1,4 @@
-﻿package com.crn.lgdms.modules.jobs.service;
+package com.crn.lgdms.modules.jobs.service;
 
 import com.crn.lgdms.common.enums.ProductType;
 import com.crn.lgdms.modules.credit.repository.CreditAccountRepository;

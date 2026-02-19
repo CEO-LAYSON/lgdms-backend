@@ -1,4 +1,4 @@
-﻿package com.crn.lgdms.modules.payments.domain.entity;
+package com.crn.lgdms.modules.payments.domain.entity;
 
 import com.crn.lgdms.modules.credit.domain.entity.CreditTransaction;
 import com.crn.lgdms.modules.sales.domain.entity.Sale;

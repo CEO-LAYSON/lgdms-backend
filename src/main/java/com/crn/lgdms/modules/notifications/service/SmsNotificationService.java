@@ -1,4 +1,4 @@
-﻿package com.crn.lgdms.modules.notifications.service;
+package com.crn.lgdms.modules.notifications.service;
 
 import com.crn.lgdms.integration.sms.SmsGatewayClient;
 import com.crn.lgdms.integration.sms.SmsMapper;
