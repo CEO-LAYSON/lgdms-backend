@@ -15,6 +15,8 @@ public final class Permissions {
     // Sales permissions
     public static final String SALE_CREATE = "sale:create";
     public static final String SALE_VIEW = "sale:view";
+    public static final String SALE_UPDATE = "sale:update";
+    public static final String SALE_DELETE = "sale:delete";
     public static final String SALE_VOID = "sale:void";
 
     // Credit permissions

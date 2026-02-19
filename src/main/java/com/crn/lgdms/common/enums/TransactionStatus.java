@@ -6,5 +6,6 @@ public enum TransactionStatus {
     REJECTED,
     COMPLETED,
     CANCELLED,
-    VOID
+    VOID,
+    IN_TRANSIT
 }
