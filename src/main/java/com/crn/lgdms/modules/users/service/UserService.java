@@ -128,14 +128,14 @@ public class UserService {
             }
         }
 
-        User oldUser = userMapper.toResponse(user); // For audit log
+        String oldUserInfo = user.getUsername(); // For audit log
         userMapper.updateEntity(request, user);
 
         User updatedUser = userRepository.save(user);
 
         // Audit log
         auditLogService.log(AuditAction.UPDATE, "User", id,
-            oldUser.toString(), userMapper.toResponse(updatedUser).toString(),
+            oldUserInfo, userMapper.toResponse(updatedUser).toString(),
             getCurrentUsername());
 
         log.info("User updated successfully with ID: {}", id);
