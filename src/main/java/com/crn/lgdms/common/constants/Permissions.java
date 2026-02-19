@@ -12,6 +12,13 @@ public final class Permissions {
     public static final String INVENTORY_ADJUST = "inventory:adjust";
     public static final String INVENTORY_TRANSFER = "inventory:transfer";
 
+    // Transfer permissions
+    public static final String TRANSFER_CREATE = "transfer:create";
+    public static final String TRANSFER_VIEW = "transfer:view";
+    public static final String TRANSFER_APPROVE = "transfer:approve";
+    public static final String TRANSFER_RECEIVE = "transfer:receive";
+    public static final String TRANSFER_CANCEL = "transfer:cancel";
+
     // Sales permissions
     public static final String SALE_CREATE = "sale:create";
     public static final String SALE_VIEW = "sale:view";
