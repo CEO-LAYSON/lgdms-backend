@@ -166,7 +166,7 @@ public class DashboardService {
             .totalEmptyCylinders(totalEmpty)
             .lowStockItems(lowStockItems)
             .outOfStockItems(outOfStockItems)
-            .totalStockValue(totalValue.doubleValue())
+            .totalStockValue(totalValue)
             .stockByLocation(stockByLocation)
             .stockByProduct(new ArrayList<>(stockByProductMap.values()))
             .build();
@@ -218,7 +218,7 @@ public class DashboardService {
 
             dailySales.add(DashboardKpiResponse.DailySales.builder()
                 .date(date.toString())
-                .amount(dayAmount != null ? dayAmount.doubleValue() : 0.0)
+                .amount(dayAmount != null ? dayAmount : BigDecimal.ZERO)
                 .transactions(dayTransactions)
                 .build());
         }
@@ -235,17 +235,17 @@ public class DashboardService {
             salesByLocation.add(DashboardKpiResponse.SalesByLocation.builder()
                 .locationId(location.getId())
                 .locationName(location.getName())
-                .amount(locationAmount.doubleValue())
+                .amount(locationAmount)
                 .transactions(sales.size())
                 .build());
         }
 
         return DashboardKpiResponse.SalesSummary.builder()
-            .todaySales(todaySales.doubleValue())
+            .todaySales(todaySales)
             .todayTransactions(todayTransactions)
-            .weekSales(weekSales.doubleValue())
-            .monthSales(monthSales.doubleValue())
-            .yearSales(yearSales.doubleValue())
+            .weekSales(weekSales)
+            .monthSales(monthSales)
+            .yearSales(yearSales)
             .dailySales(dailySales)
             .salesByLocation(salesByLocation)
             .build();
@@ -262,29 +262,29 @@ public class DashboardService {
         // Simple aging buckets (in real implementation, would calculate from transactions)
         agingBuckets.add(DashboardKpiResponse.AgingBucket.builder()
             .bucket("Current")
-            .amount(totalOutstanding.multiply(BigDecimal.valueOf(0.6)).doubleValue())
+            .amount(totalOutstanding.multiply(BigDecimal.valueOf(0.6)))
             .build());
         agingBuckets.add(DashboardKpiResponse.AgingBucket.builder()
             .bucket("1-30 days")
-            .amount(totalOutstanding.multiply(BigDecimal.valueOf(0.2)).doubleValue())
+            .amount(totalOutstanding.multiply(BigDecimal.valueOf(0.2)))
             .build());
         agingBuckets.add(DashboardKpiResponse.AgingBucket.builder()
             .bucket("31-60 days")
-            .amount(totalOutstanding.multiply(BigDecimal.valueOf(0.1)).doubleValue())
+            .amount(totalOutstanding.multiply(BigDecimal.valueOf(0.1)))
             .build());
         agingBuckets.add(DashboardKpiResponse.AgingBucket.builder()
             .bucket("61-90 days")
-            .amount(totalOutstanding.multiply(BigDecimal.valueOf(0.05)).doubleValue())
+            .amount(totalOutstanding.multiply(BigDecimal.valueOf(0.05)))
             .build());
         agingBuckets.add(DashboardKpiResponse.AgingBucket.builder()
             .bucket("90+ days")
-            .amount(totalOutstanding.multiply(BigDecimal.valueOf(0.05)).doubleValue())
+            .amount(totalOutstanding.multiply(BigDecimal.valueOf(0.05)))
             .build());
 
         return DashboardKpiResponse.CreditSummary.builder()
-            .totalOutstanding(totalOutstanding.doubleValue())
+            .totalOutstanding(totalOutstanding)
             .accountsOverLimit(creditAccountRepository.findAccountsOverLimit().size())
-            .overdueAmount(totalOutstanding.multiply(BigDecimal.valueOf(0.2)).doubleValue()) // Simplified
+            .overdueAmount(totalOutstanding.multiply(BigDecimal.valueOf(0.2))) // Simplified
             .overdueAccounts(5) // Placeholder
             .agingBuckets(agingBuckets)
             .build();

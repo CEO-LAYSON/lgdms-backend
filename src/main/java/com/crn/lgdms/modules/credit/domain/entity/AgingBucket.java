@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 
 @Data
 @Builder
@@ -41,7 +42,7 @@ public class AgingBucket {
 
         for (CreditTransaction tx : transactions) {
             if (tx.getTransactionType() == CreditTransaction.TransactionType.SALE) {
-                long daysOverdue = java.time.temporal.ChronoUnit.DAYS.between(
+                long daysOverdue = ChronoUnit.DAYS.between(
                     tx.getTransactionDate().toLocalDate(), asOfDate);
 
                 if (daysOverdue <= 0) {

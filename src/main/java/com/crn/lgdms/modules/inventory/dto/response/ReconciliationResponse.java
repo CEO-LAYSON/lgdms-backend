@@ -1,10 +1,12 @@
 package com.crn.lgdms.modules.inventory.dto.response;
 
+import com.crn.lgdms.common.enums.ProductType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Data

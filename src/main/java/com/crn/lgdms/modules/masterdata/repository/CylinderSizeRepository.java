@@ -17,6 +17,8 @@ public interface CylinderSizeRepository extends JpaRepository<CylinderSize, Stri
 
     List<CylinderSize> findByIsActiveTrue(Sort sort);
 
+    List<CylinderSize> findByIsActiveTrue();
+
     @Query("SELECT c FROM CylinderSize c WHERE c.weightKg = :weight")
     Optional<CylinderSize> findByWeightKg(@Param("weight") BigDecimal weight);
 
