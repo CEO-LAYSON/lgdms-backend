@@ -101,14 +101,14 @@ public class RoleService {
             throw new ConflictException("System roles cannot be modified");
         }
 
-        Role oldRole = roleMapper.toResponse(role); // For audit log
+        String oldRoleInfo = role.getName(); // For audit log
         roleMapper.updateEntity(request, role);
 
         Role updatedRole = roleRepository.save(role);
 
         // Audit log
         auditLogService.log(AuditAction.UPDATE, "Role", id,
-            oldRole.toString(), roleMapper.toResponse(updatedRole).toString(),
+            oldRoleInfo, roleMapper.toResponse(updatedRole).toString(),
             getCurrentUsername());
 
         log.info("Role updated successfully with ID: {}", id);

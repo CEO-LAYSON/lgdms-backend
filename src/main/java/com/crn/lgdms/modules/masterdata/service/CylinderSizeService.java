@@ -98,11 +98,6 @@ public class CylinderSizeService {
         CylinderSize cylinderSize = cylinderSizeRepository.findById(id)
             .orElseThrow(() -> new NotFoundException("Cylinder size not found with id: " + id));
 
-        // Check if used in price categories
-        if (!cylinderSize.getPriceCategories().isEmpty()) {
-            throw new ConflictException("Cannot delete cylinder size that is used in price categories");
-        }
-
         cylinderSizeRepository.delete(cylinderSize);
 
         auditLogService.log(AuditAction.DELETE, "CylinderSize", id,
