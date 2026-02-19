@@ -1,6 +1,6 @@
 package com.crn.lgdms.modules.receiving.dto.mapper;
 
-import com.crn.lgdms.common.mapping.MapperConfig;
+import com.crn.lgdms.common.mapping.BaseMapperConfig;
 import com.crn.lgdms.modules.receiving.domain.entity.ReceivingItem;
 import com.crn.lgdms.modules.receiving.dto.request.AddReceivingItemRequest;
 import com.crn.lgdms.modules.receiving.dto.response.ReceivingItemResponse;
@@ -8,7 +8,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;
 
-@Mapper(config = MapperConfig.class)
+@Mapper(config = BaseMapperConfig.class)
 public interface ReceivingItemMapper {
 
     @Mapping(target = "id", ignore = true)

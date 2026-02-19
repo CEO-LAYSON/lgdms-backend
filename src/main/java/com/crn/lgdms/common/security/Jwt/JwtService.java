@@ -77,4 +77,12 @@ public class JwtService {
         byte[] keyBytes = Decoders.BASE64.decode(jwtProperties.getSecret());
         return Keys.hmacShaKeyFor(keyBytes);
     }
+
+    /**
+     * Returns the token expiration time in milliseconds.
+     * @return expiration time in milliseconds
+     */
+    public long getExpirationTime() {
+        return jwtProperties.getExpiration();
+    }
 }

@@ -1,12 +1,12 @@
 package com.crn.lgdms.modules.credit.dto.mapper;
 
-import com.crn.lgdms.common.mapping.MapperConfig;
+import com.crn.lgdms.common.mapping.BaseMapperConfig;
 import com.crn.lgdms.modules.credit.domain.entity.CreditTransaction;
 import com.crn.lgdms.modules.credit.dto.response.CreditTransactionResponse;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
-@Mapper(config = MapperConfig.class)
+@Mapper(config = BaseMapperConfig.class)
 public interface CreditMapper {
 
     @Mapping(target = "accountNumber", source = "creditAccount.accountNumber")

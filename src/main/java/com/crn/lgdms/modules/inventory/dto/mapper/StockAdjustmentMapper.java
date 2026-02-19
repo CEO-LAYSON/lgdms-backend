@@ -1,13 +1,13 @@
 package com.crn.lgdms.modules.inventory.dto.mapper;
 
-import com.crn.lgdms.common.mapping.MapperConfig;
+import com.crn.lgdms.common.mapping.BaseMapperConfig;
 import com.crn.lgdms.modules.inventory.domain.entity.StockAdjustment;
 import com.crn.lgdms.modules.inventory.dto.request.CreateAdjustmentRequest;
 import com.crn.lgdms.modules.inventory.dto.response.AdjustmentResponse;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
-@Mapper(config = MapperConfig.class)
+@Mapper(config = BaseMapperConfig.class)
 public interface StockAdjustmentMapper {
 
     @Mapping(target = "id", ignore = true)

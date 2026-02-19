@@ -1,13 +1,13 @@
 package com.crn.lgdms.modules.sales.dto.mapper;
 
-import com.crn.lgdms.common.mapping.MapperConfig;
+import com.crn.lgdms.common.mapping.BaseMapperConfig;
 import com.crn.lgdms.modules.sales.domain.entity.Customer;
 import com.crn.lgdms.modules.sales.dto.request.CreateCustomerRequest;
 import com.crn.lgdms.modules.sales.dto.request.UpdateCustomerRequest;
 import com.crn.lgdms.modules.sales.dto.response.CustomerResponse;
 import org.mapstruct.*;
 
-@Mapper(config = MapperConfig.class)
+@Mapper(config = BaseMapperConfig.class)
 public interface CustomerMapper {
 
     @Mapping(target = "id", ignore = true)

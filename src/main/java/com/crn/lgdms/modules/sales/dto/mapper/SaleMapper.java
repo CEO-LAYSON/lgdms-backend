@@ -1,6 +1,6 @@
 package com.crn.lgdms.modules.sales.dto.mapper;
 
-import com.crn.lgdms.common.mapping.MapperConfig;
+import com.crn.lgdms.common.mapping.BaseMapperConfig;
 import com.crn.lgdms.modules.sales.domain.entity.Sale;
 import com.crn.lgdms.modules.sales.dto.response.SaleResponse;
 import org.mapstruct.Mapper;
@@ -8,7 +8,7 @@ import org.mapstruct.Mapping;
 import org.mapstruct.Named;
 import java.util.stream.Collectors;
 
-@Mapper(config = MapperConfig.class, uses = {SaleItemMapper.class, CustomerMapper.class})
+@Mapper(config = BaseMapperConfig.class, uses = {SaleItemMapper.class, CustomerMapper.class})
 public interface SaleMapper {
 
     @Mapping(target = "locationId", source = "location.id")

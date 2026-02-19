@@ -1,12 +1,12 @@
 package com.crn.lgdms.modules.transfer.dto.mapper;
 
-import com.crn.lgdms.common.mapping.MapperConfig;
+import com.crn.lgdms.common.mapping.BaseMapperConfig;
 import com.crn.lgdms.modules.transfer.domain.entity.TransferRequest;
 import com.crn.lgdms.modules.transfer.dto.request.CreateTransferRequestRequest;
 import com.crn.lgdms.modules.transfer.dto.response.TransferRequestResponse;
 import org.mapstruct.*;
 
-@Mapper(config = MapperConfig.class, uses = {TransferRequestItemMapper.class})
+@Mapper(config = BaseMapperConfig.class, uses = {TransferRequestItemMapper.class})
 public interface TransferRequestMapper {
 
     @Mapping(target = "id", ignore = true)

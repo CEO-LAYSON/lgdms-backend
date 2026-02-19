@@ -1,12 +1,12 @@
 package com.crn.lgdms.modules.sales.dto.mapper;
 
-import com.crn.lgdms.common.mapping.MapperConfig;
+import com.crn.lgdms.common.mapping.BaseMapperConfig;
 import com.crn.lgdms.modules.sales.domain.entity.SaleItem;
 import com.crn.lgdms.modules.sales.dto.response.SaleItemResponse;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
-@Mapper(config = MapperConfig.class)
+@Mapper(config = BaseMapperConfig.class)
 public interface SaleItemMapper {
 
     @Mapping(target = "cylinderSizeId", source = "cylinderSize.id")

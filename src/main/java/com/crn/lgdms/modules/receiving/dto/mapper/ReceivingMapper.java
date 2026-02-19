@@ -1,13 +1,13 @@
 package com.crn.lgdms.modules.receiving.dto.mapper;
 
-import com.crn.lgdms.common.mapping.MapperConfig;
+import com.crn.lgdms.common.mapping.BaseMapperConfig;
 import com.crn.lgdms.modules.receiving.domain.entity.GoodsReceiving;
 import com.crn.lgdms.modules.receiving.dto.request.CreateReceivingRequest;
 import com.crn.lgdms.modules.receiving.dto.request.UpdateReceivingRequest;
 import com.crn.lgdms.modules.receiving.dto.response.ReceivingResponse;
 import org.mapstruct.*;
 
-@Mapper(config = MapperConfig.class, uses = {ReceivingItemMapper.class})
+@Mapper(config = BaseMapperConfig.class, uses = {ReceivingItemMapper.class})
 public interface ReceivingMapper {
 
     @Mapping(target = "id", ignore = true)

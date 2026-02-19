@@ -1,6 +1,6 @@
 package com.crn.lgdms.modules.users.dto.mapper;
 
-import com.crn.lgdms.common.mapping.MapperConfig;
+import com.crn.lgdms.common.mapping.BaseMapperConfig;
 import com.crn.lgdms.modules.users.domain.entity.Role;
 import com.crn.lgdms.modules.users.dto.request.CreateRoleRequest;
 import com.crn.lgdms.modules.users.dto.request.UpdateRoleRequest;
@@ -9,7 +9,7 @@ import org.mapstruct.*;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-@Mapper(config = MapperConfig.class, uses = {PermissionMapper.class})
+@Mapper(config = BaseMapperConfig.class, uses = {PermissionMapper.class})
 public interface RoleMapper {
 
     @Mapping(target = "id", ignore = true)

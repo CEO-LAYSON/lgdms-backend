@@ -1,13 +1,13 @@
 package com.crn.lgdms.modules.masterdata.dto.mapper;
 
-import com.crn.lgdms.common.mapping.MapperConfig;
+import com.crn.lgdms.common.mapping.BaseMapperConfig;
 import com.crn.lgdms.modules.masterdata.domain.entity.PriceCategory;
 import com.crn.lgdms.modules.masterdata.dto.request.CreatePriceCategoryRequest;
 import com.crn.lgdms.modules.masterdata.dto.request.UpdatePriceCategoryRequest;
 import com.crn.lgdms.modules.masterdata.dto.response.PriceCategoryResponse;
 import org.mapstruct.*;
 
-@Mapper(config = MapperConfig.class, uses = {CylinderSizeMapper.class})
+@Mapper(config = BaseMapperConfig.class, uses = {CylinderSizeMapper.class})
 public interface PriceCategoryMapper {
 
     @Mapping(target = "id", ignore = true)

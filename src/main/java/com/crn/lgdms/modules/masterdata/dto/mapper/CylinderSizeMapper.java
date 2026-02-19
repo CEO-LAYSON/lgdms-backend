@@ -1,13 +1,13 @@
 package com.crn.lgdms.modules.masterdata.dto.mapper;
 
-import com.crn.lgdms.common.mapping.MapperConfig;
+import com.crn.lgdms.common.mapping.BaseMapperConfig;
 import com.crn.lgdms.modules.masterdata.domain.entity.CylinderSize;
 import com.crn.lgdms.modules.masterdata.dto.request.CreateCylinderSizeRequest;
 import com.crn.lgdms.modules.masterdata.dto.request.UpdateCylinderSizeRequest;
 import com.crn.lgdms.modules.masterdata.dto.response.CylinderSizeResponse;
 import org.mapstruct.*;
 
-@Mapper(config = MapperConfig.class)
+@Mapper(config = BaseMapperConfig.class)
 public interface CylinderSizeMapper {
 
     @Mapping(target = "id", ignore = true)
